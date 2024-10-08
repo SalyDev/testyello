@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<div class="grid-container">
+    <!-- sidebar de gauche -->
+    <div  class="sidebar left-sidebar">
+        <app-left-sidebar></app-left-sidebar>
+    </div>
+    
+    <!-- navigation -->
+    <div class="main">
+         <router-outlet></router-outlet>
+    </div>
+
+    <!-- sidebar de droite -->
+    <div class="sidebar right-sidebar">
+       <app-right-sidebar></app-right-sidebar>
+    </div>
+
+
+</div>

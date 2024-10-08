@@ -17,32 +17,32 @@ export interface CourseCategory {
     },
     {
       id: 3,
-      icon: 'fi fi-rs-settings', 
+      icon: 'fi fi-rr-calculator',
       nom: 'Physique & Chimie'
     },
     {
       id: 4,
-      icon: 'fi fi-rs-settings',
+      icon: 'fi fi-rr-calculator',
       nom: 'SVT'
     },
     {
       id: 5,
-      icon: 'fi fi-rs-settings',
+      icon: 'fi fi-rr-calculator',
       nom: 'Français'
     },
     {
       id: 6,
-      icon: 'fi fi-rs-settings',
+      icon: 'fi fi-rr-calculator',
       nom: 'Histore & Geographie'
     },
     {
       id: 7,
-      icon: 'fi fi-rs-settings',
+      icon: 'fi fi-rr-calculator',
       nom: 'Philosophie'
     },
     {
       id: 8,
-      icon: 'fi fi-rs-settings',
+      icon: 'fi fi-rr-calculator',
       nom: 'Art'
     },
  

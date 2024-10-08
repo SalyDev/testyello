@@ -1,1 +1,46 @@
-<p>cours-list works!</p>
+<div class="slogan"> 
+    <h1>Découvre une nouvelle façon d'étudier avec Yello !</h1>
+</div>
+
+
+<div class="horizontal-scroll">
+    <div class="list-course-category">
+        <div *ngFor="let category of categories" class="course-category">
+            <div class="course-category-icon">
+                <i class={{category.icon}} ></i>
+            </div>
+            <p class="course-category-name">{{category.nom}}</p>
+            <!-- <div class="course-category-icon">
+                <i class="fi fi-rs-settings"></i>
+            </div>
+            <p class="course-category-name">Tout</p> -->
+        </div>
+    </div>
+</div>
+
+
+<!-- liste des cours -->
+ <div class="course-list">
+   
+    <div *ngFor="let course of courses" class="course-card {{course.style}} "  [routerLink]="['/cours']" [queryParams]="{ id: [course.id] }">
+        <div class="course-secrion-1">
+            <div class="course-category-info">
+                <div class="course-category-icon">
+                    <i class={{course.category.icon}}></i>
+                </div>
+                <div>
+                    <p class="text-bold">{{course.category.nom}}</p>
+                </div>
+            </div>
+            <div class="course-rate">
+                <i class="fi fi-sr-star"></i>
+                <span class="text-bold arial-font"> {{course.rate}}</span>
+            </div>
+        </div>
+        <h3 class="course-title">{{course.title}}</h3>
+        <div class="course-audio-detail">
+            <span class="text-bold text-italic course-duration"> {{course.duraton}}</span>
+        </div>
+        
+    </div>
+ </div>

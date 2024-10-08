@@ -1,1 +1,21 @@
-<p>course-details works!</p>
+<div class="go-back-section">
+    <i class="fi fi-rr-arrow-small-left"></i>
+    <a routerLink="/">Retourner à l'accueil</a>
+    
+</div>
+
+<!-- image de mise en avant -->
+<div class="cours-image-section"></div>
+
+<!--  titre du cours -->
+<p class="course-title">{{course?.title}}</p>
+
+<!-- section : icon lecteur, ligne de l'audio, durée du cours -->
+<div class="audio-line-section">
+    <i class="fi fi-sr-play"></i>
+    <div class="audio-line"></div>
+    <p class="text-bold">{{course?.duration}}</p>  
+</div>
+
+<!-- description du cours -->
+<p class="course-description">{{course?.description}}</p>
