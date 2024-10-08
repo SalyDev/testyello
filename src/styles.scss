@@ -1,0 +1,212 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+// debut scroll bar
+/* largeur du scoll bar */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* color du tracage */
+  ::-webkit-scrollbar-track {
+    background: #FBF8F6;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FBF8F6;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FBF8F6;
+  }
+
+
+  /* start : couleurs globales  */
+  $yello-yellow: #FDC335;
+
+
+  /* end : couleurs globales */
+
+// fin scroll bar
+
+
+// font personnalisé
+@font-face {
+  font-family: 'Planc';
+  src:  url(assets/fonts/planc.otf)
+}
+
+body{
+    // background: #FBF8F6;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // height: 100%;
+    background: #FBF8F6;
+    // padding: 20px;
+    font-family: 'Planc', sans-serif
+    
+}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    // padding: 15px;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.fi{
+  line-height: 0.5em;
+  vertical-align: -0.15em;
+}
+
+// icon : category math
+.fi-rr-calculator{
+  color: #0ec576;
+}
+
+// ajout d'un margin-top aux enfants directes de la classe icon-list
+//  ayant element qui les précédent
+.icon-list > * + *{
+    margin-top: 10px;
+}
+
+.horizontal-scroll{
+  // background-color: green;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.list-course-category{
+  // background-color: red;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 200%;
+
+  // overflow: hidden;
+  // overflow: scroll;
+ 
+}
+// section : category de cours
+.course-category{
+  display: flex;
+  gap: 10px;
+  background: #F3EBE5;
+  // justify-content: center;
+  align-items: center;
+  // width: 200px;
+  padding: 5px 30px 5px 5px;
+  // padding-right: 20px;
+  // padding-left:5px;
+  border-radius: 30px;
+  
+}
+
+.fi-sr-star{
+  color: $yello-yellow;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.course-duration{
+  font-size: 15px;
+}
+
+.arial-font{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+// .course-category{
+//   padding: 5px ;
+
+// }
+
+.course-category-icon{
+   background: #FFFFFF;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+}
+
+.course-category-name{
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*debut : section liste des cours*/
+
+.course-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  // height: 50vh;
+  overflow: scroll;
+  
+}
+
+// card princale d'un cours
+.course-card{
+  background: rgb(191,240,219);
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.course-secrion-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-category-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.course-rate{
+  background: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.course-title{
+  margin: 40px 0 20px 0;
+  font-size: 1.5em;
+}
+
+.course-audio-detail{
+  float: right;
+}
+
+
+/* fin : section liste des cours*/
+// .course-category-icon > .fi{
+//   line-height: 0.5em;
+//   vertical-align: -0.15em;
+// }
+
+
+
+

@@ -1,0 +1,97 @@
+.grid-container{
+    width: 100wh;
+    background: red;
+    display: grid;
+    grid-template-columns: 5% 60% 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 60px;
+    height: 100vh;
+   
+    // overflow: scroll;
+
+
+    // padding: 0 20px;
+
+ 
+}
+
+
+.leftNavbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:  20px;
+    gap: 50px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // position: fixed;
+    // left: 0;
+    // top: 0;
+    
+    // height: 100vh;
+    
+    
+
+    // box-sizing: border-box;
+}
+
+.rightNavbar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    // height: 100vh;
+    // width: 100%;
+}
+
+.rightNavbar, .leftNavbar{
+    background: #F3EBE5;
+    border-radius: 20px;
+    // height: 700px
+
+}
+
+.yello-icon{
+    border-radius: 20px;
+    width: 50px;
+   height: 50px;
+}
+
+// ajout d'un margin-top de 30px aux enfants directes de la classe nav-left-section
+//  ayant element qui les précédent
+.nav-left-section > * + *{
+    margin-top: 40px;
+}
+
+.user-avatar{
+    background: url(../../assets/images/others/black_woman_portrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.main{
+    padding-top: 60px;
+    // height: 700px;
+    background: yellow;
+    width: 60%;
+    position: absolute;
+right: auto;
+left: auto;    // overflow: scroll;
+}
+
+.main h1{
+    text-align: start;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+
+.slogan{
+    width: 60%;    
+}
